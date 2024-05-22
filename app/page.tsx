@@ -11,7 +11,7 @@ export default async function Home({ searchParams }: { searchParams: any }) {
   return (
     <main>
       {/* Implement a filter to only display pokemon of certain type */}
-
+      <div className="hidden">{searchParams?.text}</div>
       <CardsAndFilter pokeData={pokeData} />
     </main>
   );
