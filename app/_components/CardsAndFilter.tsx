@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
+import { Image } from "@nextui-org/react";
 import {
   Accordion,
   Checkbox,
