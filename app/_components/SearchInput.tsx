@@ -6,11 +6,11 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
+  Image,
 } from "@nextui-org/react";
 import SearchIcon from "./SearchIcon";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 export default function SearchInput({ pokeData }: { pokeData: any }) {
   const [searchResults, setSearchResults] = useState([]);
   const handleSearch = () => {
