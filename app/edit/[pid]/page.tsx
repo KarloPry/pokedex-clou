@@ -1,7 +1,6 @@
 "use client";
 import PokemonType from "@/app/_components/PokemonType";
-import { Button, Slider, Spinner } from "@nextui-org/react";
-import Image from "next/image";
+import { Button, Slider, Spinner, Image } from "@nextui-org/react";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
