@@ -5,7 +5,8 @@ async function getPokemonData() {
   const pokemon = await prisma.pokemon.findMany();
   return pokemon;
 }
-export default async function Home() {
+export default async function Home({ searchParams }: { searchParams: any }) {
+  console.log(searchParams);
   const pokeData = await getPokemonData();
   return (
     <main>
