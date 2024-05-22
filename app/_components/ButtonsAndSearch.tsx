@@ -13,7 +13,7 @@ export default async function ButtonsAndSearch() {
     <div className="flex gap-2">
       <Link
         href="/"
-        className="rounded-md border-white border-2 hover:border-zinc-200 transition-colors px-10 py-2"
+        className="rounded-md border-white border-2 hover:border-zinc-200 transition-colors px-4 md:px-10 py-2"
       >
         Inicio
       </Link>

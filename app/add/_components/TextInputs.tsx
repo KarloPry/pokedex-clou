@@ -160,7 +160,7 @@ export default function TextInputs() {
         required={true}
       />
       <Select
-        label="Select an animal"
+        label="Selecciona el tipo"
         className="max-w-xs"
         {...register("type")}
       >
