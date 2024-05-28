@@ -76,6 +76,7 @@ export default function TextInputs() {
   return (
     <>
       <Input
+        id="name"
         variant="bordered"
         label="Nombre del pokemon"
         {...register("name", {
@@ -86,6 +87,7 @@ export default function TextInputs() {
         errorMessage={"El nombre es requerido"}
       />
       <Input
+        id="hp"
         variant="bordered"
         type="number"
         label="HP del pokemon"
@@ -99,6 +101,7 @@ export default function TextInputs() {
         required={true}
       />
       <Input
+        id="attack"
         variant="bordered"
         type="number"
         label="Ataque del pokemon"
@@ -112,6 +115,7 @@ export default function TextInputs() {
         required={true}
       />
       <Input
+        id="defense"
         variant="bordered"
         type="number"
         label="Defensa del pokemon"
@@ -124,6 +128,7 @@ export default function TextInputs() {
         required={true}
       />
       <Input
+        id="sp_atk"
         variant="bordered"
         type="number"
         label="Ataque Especial del pokemon"
@@ -136,6 +141,7 @@ export default function TextInputs() {
         required={true}
       />
       <Input
+        id="sp_def"
         variant="bordered"
         type="number"
         label="Defensa Especial del pokemon"
@@ -148,6 +154,7 @@ export default function TextInputs() {
         required={true}
       />
       <Input
+        id="speed"
         variant="bordered"
         type="number"
         label="Velocidad del pokemon"
@@ -160,6 +167,7 @@ export default function TextInputs() {
         required={true}
       />
       <Select
+        id="type"
         label="Selecciona el tipo"
         className="max-w-xs"
         {...register("type")}
@@ -170,7 +178,7 @@ export default function TextInputs() {
           </SelectItem>
         ))}
       </Select>
-      <Button type="submit" color="success">
+      <Button id="save" type="submit" color="success">
         Guardar nuevo pokemon
       </Button>
     </>
