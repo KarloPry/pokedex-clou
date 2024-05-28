@@ -167,13 +167,13 @@ export default function TextInputs() {
         required={true}
       />
       <Select
-        id="type"
+        id="selectType"
         label="Selecciona el tipo"
         className="max-w-xs"
         {...register("type")}
       >
-        {types.map((type) => (
-          <SelectItem key={type.value} value={type.value}>
+        {types.map((type, index) => (
+          <SelectItem id={index.toString()} key={type.value} value={type.value}>
             {type.label}
           </SelectItem>
         ))}
