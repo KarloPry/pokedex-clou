@@ -12,6 +12,7 @@ import { useState } from "react";
 function PokemonCard(pokemon: any) {
   return (
     <Link
+      id={pokemon.id}
       className={`flex flex-col rounded-md bg-red-50 w-fit select-none group`}
       style={{ backgroundColor: pokemon.MainColor }}
       href={`/pokemon?pid=${pokemon.id}`}
